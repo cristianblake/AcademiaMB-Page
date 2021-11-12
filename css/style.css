@@ -1,0 +1,821 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 16px;
+
+    @media screen and (max-width: 996px){
+        font-size: 12px;}
+}
+
+body {
+    background: #111;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #0000;
+    padding: 0px 10px;
+    transition: .6s;
+    z-index: 10000;
+}
+
+.navbar {
+    min-height: 70px;
+    padding: 0;
+}
+
+.logo {
+    width: 70px;
+    display: inline;
+    margin: 10px 25px 10px 10px;
+}
+
+.text-logo {
+    display: inline;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    margin: 3px;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 10px;
+    color: #fff;
+}
+
+.navbar-toggler:focus {
+    color: transparent;
+}
+
+header.sticky {
+    background: #000;
+}
+
+.navbar-toggler {
+    margin-right: -30px;
+}
+
+.nav-link:hover {
+    color: #ffc934;
+}
+
+nav.stroke ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #ffc934;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+/* --- --- Hero --- --- */
+
+#hero {
+    position: relative;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 300;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text__h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    color: #f8bb0f;
+    margin-top: -20px;
+}
+
+.hero-text__h2 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #fff;
+    padding: 2px;
+}
+
+/* --- --- Separador y beneficios --- --- */
+
+.separator {
+    padding: 100px;
+}
+
+.separator__text {
+    color: #ffc934;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.separator__text1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 90px;
+}
+
+.benefits {
+    padding: 60px 60px 0 60px;
+}
+
+.benefits__title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.benefits__contents {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+#academiamb-benefits {
+    background-image: url('../img/benefits.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+/* --- --- parallax --- --- */
+
+.parallax {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 100px;
+}
+
+.parallax__text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.parallax__text1 {
+    color: #cfcfcf;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+/* --- --- Carousel --- --- */
+
+#carousel-separator {
+    padding: 120px 0 40px 0;
+}
+
+.carousel__container {
+    position: relative;
+}
+
+.carousel__list {
+    z-index: 500;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.carousel__text {
+    padding: 60px;
+    text-align: center;
+}
+
+.carousel__text1 {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;  
+}
+
+.carousel__text2 {
+    color: #ffc934;
+    font-size: 1.9rem;
+    font-weight: 500; 
+}
+
+.carousel__element {
+    margin: 10px;
+}
+
+.carousel__previuos,
+.carousel__next {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 15px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 50%;
+    z-index: 600;
+}
+
+.carousel__previuos:hover,
+.carousel__next:hover{
+    opacity: 100%;
+}
+
+.carousel__previuos:focus,
+.carousel__next:focus{
+    outline: none;
+}
+
+.carousel__previuos {
+    left: 30px;
+}
+
+.carousel__next {
+    right: 30px;
+}
+
+.carousel__indicators .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    opacity: .2;
+    border-radius: 0;
+    margin: 15px 10px;
+}
+
+.carousel__indicators .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel__indicators .glider-dot:focus {
+    outline: none;
+}
+
+.carousel__indicators .glider-dot.active {
+    border: none;
+    opacity: 1;
+}
+
+/* --- --- Separador 2 --- --- */
+
+#separator-online {
+    background-image: url('../img/separator2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.separator2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 100px;
+}
+
+.separator2__text1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.separator2__text2 {
+    color: #cfcfcf;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* --- --- quote --- --- */
+
+.quote-box {
+    padding: 50px;
+}
+
+.quote-box__img {
+    width: 250px;
+    margin: 10px;
+}
+
+.quote-box__span {
+    font-size: 2rem;
+    margin: 0 5px;
+    line-height: 20px;
+}
+
+.quote-box__h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.quote-box__p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* --- --- separador 3 --- ---*/
+
+#separator-pricing {
+    background-image: url('../img/separator3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.separator3 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 100px;
+}
+
+.separator3__text1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.separator3__text2 {
+    color: #cfcfcf;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* --- --- Cursos --- --- */
+
+#pricing {
+    padding: 120px 0px;
+    background-color: #f8bb0f;
+}
+
+.pricing-title {
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.pricing-container {
+    margin: 50px;
+}
+
+.pricing-container ul {
+    list-style-type: square;
+    margin: 20px 0;
+}
+
+.pricing-container__list {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: rgb(199, 199, 199);
+}
+
+.pricing-container__list2 {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.pricing-container__title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.pricing-container__starter {
+    margin: -11px 0;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.pricing-container__starter2 {
+    margin: -11px 0;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+.pricing-container__plans {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.pricing-container__h5 {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.pricing-container__span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.pricing-container__dark {
+    padding: 80px 15px;
+    background-color: #1a1a1a;
+    border: 4px solid #1a1a1a;
+    color: #ffffff;
+}
+
+.pricing-container__yellow {
+    padding: 80px 15px;
+    background-color: #f3b814;
+    border: 4px solid #1a1a1a;
+    color: #1a1a1a;
+}
+
+/* --- --- Contacto --- --- */
+
+#contact {
+    padding: 120px 20px 30px 20px;
+}
+
+.contact-title {
+    margin: 20px 0;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.contact-row {
+    margin: 0 40px;
+}
+
+.contact-bg {
+    background-image: url('../img/contactimg.png');
+    margin: 40px 0;
+    border-top-left-radius: 1%;
+    border-bottom-left-radius: 1%;
+    object-fit: cover;
+}
+
+.contact-bg__h4 {
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 65px;
+}
+
+.contact-bg__h5 {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-icon {
+    margin: 75px 8px 10px 8px;
+    width: 40px;
+}
+
+.contact-box {
+    background: #fff;
+    margin: 40px 0;
+    padding: 120px 45px;
+    border-top-right-radius: 1%;
+    border-bottom-right-radius: 1%;
+}
+
+#floatingTextarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.form-floating {
+    margin-bottom: 20px;
+}
+
+.button-form {
+    margin: 20px 0 0 0;
+}
+
+/* --- --- Footer --- --- */
+
+footer {
+    background: #222;
+    margin: 75px 0 0 0;
+    padding: 40px;
+}
+
+.footer-box {
+    padding: 10px;
+}
+
+.footer-box__img {
+    width: 40px;
+}
+
+.footer-box__h4 {
+    color: #fff;
+    margin: 10px;
+    font-size: 1rem;
+}
+
+.footer-box__icon {
+    margin: 10px;
+    width: 35px;
+    color: #fff;
+}
+
+.about-h4 {
+    text-align: center;
+    font-size: .6rem;
+}
+
+/* --- --- MediaQuery --- --- */
+
+
+@media (max-width: 1320px) {
+    
+/* --- --- hero --- --- */
+
+    #hero {
+        background-image: url('../img/mobile-hero.jpg');
+        background-position: right center;
+    }
+    .hero-text__h1 {
+        font-size: 1.9rem;
+    }
+    .hero-text__h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 996px) {
+    
+/* --- --- hero --- --- */
+    
+    .hero-box {
+        margin-left: -60px;
+        padding: 0;
+    }
+
+/* --- --- separator y benefits --- --- */
+
+    .separator__text1 {
+        font-size: 1.5rem;
+    }
+    
+/* --- --- pricing --- --- */
+
+    .pricing-container {
+        margin: 10px;} 
+    .pricing-container__dark {
+        padding: 20px 10px;}
+    .pricing-container__yellow {
+        padding: 20px 10px;}
+    .pricing-title {
+        font-size: 2rem;
+        margin: 30px 0;}
+    
+/* --- --- contact --- --- */    
+    
+    .contact-bg {
+        margin: 0;
+        border-top-right-radius: 1%;
+        border-bottom-left-radius: 0;
+    }
+    .contact-box {
+        padding: 35px;
+        margin: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1%;
+    }
+    .contact-row {
+        margin: 0;
+    }
+    .contact-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 556px) {
+
+/* --- --- navbar --- --- */
+
+    .navbar {
+        min-height: 0;
+    }
+    header {
+        padding: 0;
+        margin: 0;
+        background: #000;
+    }
+    .logo {
+        width: 50px;
+        display: inline;
+        margin: 4px;
+        padding: 0;
+    }
+    .hero-box {
+        margin-left: 0;
+}
+    .text-logo {
+        margin: 3px;
+        font-size: 1.1rem;
+        padding: 0;
+    }
+    .nav-item {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-link {
+        font-size: .9rem;
+        font-weight: 500;
+        margin: 0 20px;
+        color: #fff;
+    }
+
+/* --- --- hero --- --- */
+
+    #hero {
+        background-image: url('../img/hero556px.jpg');
+        background-position: center center;
+    }
+    .hero-text__h1 {
+        font-size: 1.6rem;
+    }
+    .hero-text__h2 {
+        font-size: 1rem;
+    }
+
+/* --- --- separator y benefits --- --- */
+    .separator {
+        padding: 50px 10px;
+    }
+    .separator__text {
+        font-size: 1.1rem;
+    }
+    .separator__text1 {
+        font-size: 1.2rem;
+        margin: 10px;
+    }
+
+/* --- --- parallax --- --- */
+
+    .parallax {
+        padding: 20px;
+    }
+    .parallax__text {
+        font-size: 1.5rem;
+    }
+    .parallax__text1 {
+        font-size: 1.2rem;
+    }
+
+/* --- --- carousel-separator --- --- */
+
+    #carousel-separator {
+        padding: 40px 0 20px 0;
+    }
+
+/* --- --- separator-online --- --- */
+
+    .separator2 {
+        padding: 20px;
+        justify-content: center;
+    }
+    .separator2__text1 {
+        font-size: 1.5rem;
+    }
+    .separator2__text2 {
+        font-size: 1.2rem;
+    }
+
+/* --- --- quote-box --- --- */
+
+    .quote-box {
+        padding: 20px;
+    }
+    .quote-box__span {
+        font-size: 1.4rem;
+    }
+    .quote-box__p {
+        font-size: .9rem;
+    }
+
+/* --- --- separator-pricing --- --- */
+
+    .separator3 {
+        padding: 20px;
+    }
+    .separator3__text1 {
+        font-size: 1.5rem;
+    }
+    .separator3__text2 {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+/* --- --- navbar --- --- */
+
+    .logo {
+        width: 40px;
+        display: inline;
+        margin: 4px;
+        padding: 0;
+    }
+    .text-logo {
+        margin: 3px;
+        font-size: .9rem;
+        padding: 0;
+    }
+    .nav-link {
+        font-size: .8rem;
+    }
+
+/* --- --- separator y benefits --- --- */
+
+    .separator {
+        padding: 30px 10px;
+    }
+    .separator__text {
+        font-size: 1rem;
+    }
+    .separator__text1 {
+        font-size: 1.1rem;
+        margin: 10px;
+    }
+    .benefits {
+        padding: 20px 20px 0 20px;
+    }
+    
+    .benefits__title {
+        font-size: 1.1rem;
+    }
+    
+    .benefits__contents {
+        font-size: .9rem;
+    }
+
+/* --- --- carousel-separator --- --- */
+
+    #carousel-separator {
+        padding: 20px 0 10px 0;
+    }
+    .carousel__text1 {
+        font-size: 1rem;
+    }
+    .carousel__text2 {
+        font-size: .9rem;
+    }
+
+/* --- --- pricing --- --- */
+    #pricing {
+        padding: 50px 0;
+    }
+    .pricing-container__title {
+        font-size: 1.4rem;
+    }
+    .pricing-container__plans {
+        font-size: 1.1rem;
+    }
+    .pricing-container__starter {
+        margin-top: 1px;
+    }
+    .pricing-container__starter2 {
+        margin-top: 1px;
+    }
+    .pricing-container__list {
+        font-size: .8rem;
+    }
+    .pricing-container__list2 {
+        font-size: .8rem;
+    }
+
+/* --- --- contact --- --- */
+    #contact {
+        padding: 0;
+        margin: 0;
+    }
+    .contact-bg {
+        margin: 0px;
+    }
+    .contact-bg__h4 {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+}
